@@ -1,0 +1,30 @@
+POST http://localhost:3000/product HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "camisa",
+    "price": "29,00",
+    "Description": "varias fita"
+}
+
+###
+GET  http://localhost:3000/product HTTP/1.1
+Content-Type: application/json
+
+###
+GET  http://localhost:3000/product/66b7f06de8d75ae418cf1103 HTTP/1.1
+Content-Type: application/json
+
+###
+PUT http://localhost:3000/product/66b7f06de8d75ae418cf1103 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "bolsa",
+    "price": "60,00",
+    "Description": "varias fita"
+}
+
+###
+DELETE http://localhost:3000/product/66b7f06de8d75ae418cf1103 HTTP/1.1
+Content-Type: application/json
